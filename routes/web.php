@@ -20,3 +20,7 @@ Route::get('/contact', function () {
         ]
     ]);
 });
+
+Route::get('/hello/{nama}', function ($nama) {
+    return view('hello', ['nama' => $nama]);
+});
